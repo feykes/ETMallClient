@@ -1,3 +1,13 @@
-<app-header></app-header>
+<!-- <app-header></app-header>
 <app-sidebar></app-sidebar>
 <app-footer></app-footer>
+
+<router-outlet></router-outlet> 
+bunu kullanabilmek için o comp. declare edildiği modülde router module ün ekli olması gerkiyor. -->
+
+<app-header></app-header>
+<mat-drawer-container class="admin-container">
+    <mat-drawer mode="side" opened><app-sidebar></app-sidebar></mat-drawer>
+    <mat-drawer-content>Main content</mat-drawer-content>
+  </mat-drawer-container>
+  <app-footer></app-footer>

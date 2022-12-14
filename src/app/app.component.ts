@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+import { CostomToastrService, ToastrmessageType, ToastrPosition } from './services/ui/costom-toastr.service';
+declare var $: any
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ETMallClient';
+  constructor(private toastrService: CostomToastrService){
+    toastrService.message("merhaba","feyza",{
+      messageType:ToastrmessageType.Success,
+      position:ToastrPosition.TopCenter
+    });
+  }
 }

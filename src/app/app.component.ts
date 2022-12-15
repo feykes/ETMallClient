@@ -11,9 +11,9 @@ declare var $: any
 export class AppComponent {
   title = 'ETMallClient';
   constructor(private toastrService: CostomToastrService){
-    toastrService.message("merhaba","feyza",{
+    toastrService.message("Hoşgeldin","Feyza",{
       messageType:ToastrmessageType.Success,
-      position:ToastrPosition.TopCenter
+      position:ToastrPosition.TopRight
     });
   }
 }

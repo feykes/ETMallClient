@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/common/auth.service';
 declare var $: any
 
 @Component({
@@ -7,10 +8,7 @@ declare var $: any
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ETMallClient';
-
-  constructor() {
+  constructor(public authService: AuthService) {
+    authService.identityCheck();
   }
 }
-
-$.get("https://localhost:7173/api/products")

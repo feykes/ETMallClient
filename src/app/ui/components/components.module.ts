@@ -5,6 +5,8 @@ import { ProductsModule } from './products/products.module';
 import { HomeModule } from './home/home.module';
 import { RegisterComponent } from './register/register.component';
 import { RegisterModule } from './register/register.module';
+import { LoginComponent } from './login/login.component';
+import { LoginModule } from './login/login.module';
 
 
 
@@ -16,7 +18,8 @@ import { RegisterModule } from './register/register.module';
     BasketsModule,
     ProductsModule,
     HomeModule,
-    RegisterModule
+    RegisterModule,
+    LoginModule
   ]
 })
 export class ComponentsModule { }
